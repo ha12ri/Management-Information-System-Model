@@ -1,0 +1,515 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&family=Bowlby+One+SC&family=Merienda&family=Monoton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* 
+
+font-family: 'Aclonica', sans-serif;
+font-family: 'Bowlby One SC', cursive;
+font-family: 'Merienda', cursive;
+font-family: 'Monoton', cursive; 
+font-family: 'Poppins', sans-serif;
+font-family: 'Raleway', sans-serif;
+font-family: 'Rajdhani', sans-serif;
+
+*/
+
+:root {
+    --white: #F2F2F2;
+    --green: #18261B;
+    --lightBlue: #5D84A6;
+    --yellow: #F2D43D;
+    --crimsom: #D92B3A;
+    --lgreen: #254019;
+    --darkblue: #1C3659;
+    --midBlue: #2E62A6;
+    --gradient: rgb(2, 0, 36);
+    --black: #0D0D0D;
+    --opacBlack: rgba(18, 18, 18, 0.732);
+}
+
+#complaint-section {
+    width: 100%;
+}
+
+.midtext2 {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: no-repeat url('./images/army.jpg') center;
+    background-attachment: fixed;
+    background-size: cover;
+    padding: 12rem 0rem;
+}
+
+#Complaint_form {
+    cursor: pointer;
+}
+
+#cform {
+    background-color: var(--opacBlack);
+    padding: 1rem;
+    width: 60%;
+    height: 110rem;
+    color: var(--white);
+    font-family: 'Poppins', sans-serif;
+    display: none;
+    margin-bottom: 0.5rem;
+}
+
+input::file-selector-button {
+    color: var(--white);
+    background-color: var(--darkblue);
+    padding: 0.5rem 1rem;
+    border: 0.1rem solid var(--white);
+    border-radius: 1rem;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+}
+
+.icon-buttons {
+    width: 25rem;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.icon-buttons a {
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    color: var(--white);
+}
+
+#navsignoutbtn {
+    padding: 0.5rem 1rem;
+    font-size: 0.8rem;
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--crimsom);
+    border: 0px;
+    border-radius: 1rem;
+    color: var(--white);
+}
+
+#navsignoutbtn a {
+    height: 100%;
+    width: 100%
+}
+
+.cformfoot {
+    width: 100%;
+    height: 10rem;
+    background-color: var(--green);
+}
+
+.cformfoot p {
+    text-align: center;
+    padding: 2rem 0rem;
+    color: var(--white);
+    border-bottom: 0.1rem solid var(--lgreen);
+}
+
+.list-number {
+    width: 100%;
+    height: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    list-style: none;
+    color: var(--white);
+}
+
+#CaseSub {
+    padding: 1rem 2rem;
+    background-color: var(--crimsom);
+    color: var(--white);
+    border: 0.1rem solid var(--white);
+    border-radius: 2rem;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.8rem;
+}
+
+#CaseSub:hover {
+    cursor: pointer;
+    background-color: var(--darkblue);
+}
+
+.txtara {
+    padding: 1rem;
+}
+
+.txtara::placeholder {
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+#Crime-Cat,
+#crimedist {
+    width: 20rem;
+    padding: 0.5rem;
+    position: relative;
+    z-index: 1;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.8rem;
+}
+
+#Crime-Cat:focus,
+#crimedist:focus {
+    outline: none;
+}
+
+.box-div {
+    width: 100%;
+    height: 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--darkblue);
+    border-radius: 1%/10%;
+    margin-bottom: 1rem;
+    padding: 0rem 2rem;
+}
+
+.btn-div {
+    justify-content: space-evenly;
+}
+
+.box-div input {
+    width: 10rem;
+    padding: 0.5rem 1rem;
+}
+
+.cformint input {
+    width: 20.5rem;
+    padding: 0.5rem 1rem;
+}
+
+.box-div input::placeholder {
+    font-size: 1rem;
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 600;
+}
+
+#incidentdate {
+    font-size: 0.8rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.wlc-nav {
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--lgreen);
+    padding: 0rem 2rem;
+}
+
+.logo-welcom {
+    width: 2.5rem;
+    height: auto;
+}
+
+#Complaint_form,
+#widthraw_request {
+    padding: 1rem 2rem;
+    background-color: var(--darkblue);
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+    border: 0px;
+    color: var(--white);
+    border-radius: 2%/10%;
+    margin-bottom: 1rem;
+}
+#police_city,#country {
+    width: 15rem;
+    height: 2rem;
+    padding: 0.2rem 1rem;
+    font-size: 0.8rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+#signature,
+#incident {
+    width: 20rem;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.8rem;
+}
+
+#widthraw_request {
+    width: 22rem;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.lable-box input::selection {
+    padding: 1rem;
+}
+
+@media screen and (max-device-width: 480px) and (orientation: portrait) {
+    .midtext2 {
+        padding: 18rem 0rem;
+    }
+    .wlc-nav {
+        height: 10rem;
+    }
+    html {
+        font-size: 180%;
+    }
+    #cform {
+        padding: 1rem;
+        width: 95%;
+        height: 110rem;
+    }
+    .lable-box {
+        width: 10rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .cformint input {
+        width: 12.4rem;
+    }
+    .txtara {
+        width: 13rem;
+    }
+    .txtara {
+        padding: 1rem;
+    }
+    .txtara::placeholder {
+        font-size: 0.9rem;
+    }
+    .time input {
+        font-size: 1rem;
+        margin: 0.1rem;
+    }
+    .cformint input {
+        padding: 1rem;
+    }
+}
+
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    .midtext2 {
+        padding: 18rem 0rem;
+    }
+    .wlc-nav {
+        height: 8rem;
+    }
+    html {
+        font-size: 130%;
+    }
+    #cform {
+        padding: 1rem;
+        width: 95%;
+        height: 110rem;
+    }
+    .lable-box {
+        width: 20rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .cformint input {
+        width: 12.4rem;
+    }
+    .txtara {
+        width: 19rem;
+    }
+    .txtara {
+        padding: 1rem;
+    }
+    .txtara::placeholder {
+        font-size: 1rem;
+    }
+    .time input {
+        font-size: 1rem;
+        margin: 0.1rem;
+    }
+    .cformint input {
+        width: 18rem;
+        padding: 1rem;
+    }
+}
+
+@media screen and (max-device-width: 640px) and (orientation: landscape) {
+    .midtext2 {
+        padding: 18rem 0rem;
+    }
+    .wlc-nav {
+        height: 5rem;
+    }
+    html {
+        font-size: 130%;
+    }
+    #cform {
+        padding: 1rem;
+        width: 95%;
+        height: 110rem;
+    }
+    .lable-box {
+        width: 20rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .cformint input {
+        width: 12.4rem;
+    }
+    .txtara {
+        width: 19rem;
+    }
+    .txtara {
+        padding: 1rem;
+    }
+    .txtara::placeholder {
+        font-size: 1rem;
+    }
+    .time input {
+        font-size: 1rem;
+        margin: 0.1rem;
+    }
+    .cformint input {
+        width: 18rem;
+        padding: 1rem;
+    }
+}
+
+@media screen and (max-device-width: 640px) {
+    .midtext2 {
+        padding: 18rem 0rem;
+    }
+    .wlc-nav {
+        height: 5rem;
+    }
+    html {
+        font-size: 130%;
+    }
+    #cform {
+        padding: 1rem;
+        width: 95%;
+        height: 110rem;
+    }
+    .lable-box {
+        width: 20rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .cformint input {
+        width: 12.4rem;
+    }
+    .txtara {
+        width: 19rem;
+    }
+    .txtara {
+        padding: 1rem;
+    }
+    .txtara::placeholder {
+        font-size: 1rem;
+    }
+    .time input {
+        font-size: 1rem;
+        margin: 0.1rem;
+    }
+    .cformint input {
+        width: 18rem;
+        padding: 1rem;
+    }
+}
+
+@media screen and (min-device-width: 320px) and (-webkit-min-device-pixel-ratio: 2) {
+    .midtext2 {
+        padding: 15rem 0rem;
+    }
+    .wlc-nav {
+        height: 10rem;
+    }
+    html {
+        font-size: 200%;
+    }
+    #cform {
+        padding: 1rem;
+        width: 95%;
+        height: 110rem;
+    }
+    .lable-box {
+        width: 10rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .txtara {
+        width: 11.2rem;
+    }
+    .txtara {
+        padding: 1rem;
+    }
+    .txtara::placeholder {
+        font-size: 1rem;
+    }
+    .time input {
+        font-size: 1rem;
+        margin: 0.1rem;
+    }
+    .cformint input {
+        width: 11rem;
+        padding: 1rem;
+    }
+}
+
+@media (device-height: 568px) and (device-width: 320px) and (-webkit-min-device-pixel-ratio: 2) {
+    .midtext2 {
+        padding: 15rem 0rem;
+    }
+    .wlc-nav {
+        height: 10rem;
+    }
+    html {
+        font-size: 200%;
+    }
+    #cform {
+        padding: 1rem;
+        width: 95%;
+        height: 110rem;
+    }
+    .lable-box {
+        width: 10rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .txtara {
+        width: 11.2rem;
+    }
+    .txtara {
+        padding: 1rem;
+    }
+    .txtara::placeholder {
+        font-size: 1rem;
+    }
+    .time input {
+        font-size: 1rem;
+        margin: 0.1rem;
+    }
+    .cformint input {
+        width: 11rem;
+        padding: 1rem;
+    }
+}

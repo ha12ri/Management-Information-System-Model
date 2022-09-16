@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 100%;
+}
+
+:root {
+    --white: #F2F2F2;
+    --lightBlue: #5D84A6;
+    --crimsom: #D92B3A;
+    --darkblue: #1C3659;
+    --black: #0D0D0D;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--black);
+}
+
+#LoginPhase {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+.form-section-field {
+    width: 30rem;
+    height: 20rem;
+    background-color: var(--lightBlue);
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.heading {
+    font-size: 2rem;
+    font-family: 'Rajdhani', sans-serif;
+    color: var(--darkblue);
+}
+
+.input-pl,
+#button-login {
+    width: 25rem;
+    padding: 0.4rem 1rem;
+    margin-bottom: 1rem;
+}
+
+.input-pl::placeholder {
+    font-size: 0.8rem;
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 600;
+}
+
+#button-login {
+    background-color: var(--crimsom);
+    color: var(--white);
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+    border: 0px;
+    cursor: pointer;
+}
+
+#button-login:hover {
+    background-color: var(--darkblue);
+}
+
+.userReg {
+    font-size: 1rem;
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 600;
+}
+
+.userReg a {
+    font-family: 'Poppins', sans-serif;
+    color: var(--darkblue);
+    font-size: 1rem;
+}
+
+.userforget {
+    position: relative;
+    align-content: center;
+    font-size: 1rem;
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 600;
+}
+
+.userforget a {
+    text-align: center;
+    font-family: 'Rajdhani', sans-serif;
+    color: var(--darkblue);
+    font-size: 1rem;
+}
+
+
+/* media-queries */
+
+@media screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    html {
+        font-size: 60%;
+    }
+}
+
+@media screen and (min-device-width: 480px) and (max-device-width: 768px) {
+    html {
+        font-size: 95%;
+    }
+}
+
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    html {
+        font-size: 140%;
+    }
+}
+
+@media screen and (min-device-width: 1024px) and (max-device-width: 1210px) {
+    html {
+        font-size: 160%;
+    }
+}
+
+@media screen and (min-device-width: 1210px) and (max-device-width: 1600px) {
+    html {
+        font-size: 120%;
+    }
+}
+
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
