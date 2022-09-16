@@ -1,0 +1,4 @@
+# Management-Information-System-Model
+
+MIS model is a fully functional E-Police Station. For users, police officers, and the department head, login and registration are available. Users can submit a police report (FIR), withdraw a report (with the permission of a police officer), and view information about a submitted FIR as well as the case handler's (police officer) comments. Police officers have access to tools that allow them to investigate complaints, accept or reject requests to withdraw cases, locate hotspots, address any complaints, and check their attendance. The head may see whether a police officer is there before they enter into the system, as well as the presence of police officers and hotspot locations. The first time a police officer logs into the system in a day, the system will automatically record their attendance. Only Verified Police officers can enter into the system.
+
