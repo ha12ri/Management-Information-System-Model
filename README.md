@@ -6,4 +6,3 @@ MIS model is a fully functional E-Police Station. For users, police officers, an
 ![Screenshot (106)](https://user-images.githubusercontent.com/92323049/190615637-b7875b4d-41e6-40ec-8d22-43ebed536660.png)
 ![Screenshot (107)](https://user-images.githubusercontent.com/92323049/190615682-4320e64b-bbb5-43e2-b463-d3a06e28c9b7.png)
 ![Screenshot (108)](https://user-images.githubusercontent.com/92323049/190615689-cb753b4b-a7f5-4c0c-b480-6c5b369082b5.png)
-![Screenshot (109)](https://user-images.githubusercontent.com/92323049/190615704-90ba26e5-6f4b-4cbf-a9ae-d9d9157c2458.png)
